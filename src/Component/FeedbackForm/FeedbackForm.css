@@ -1,0 +1,204 @@
+/* .feedback-form-container {
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.feedback-form-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.feedback-form-container label {
+    font-weight: bold;
+}
+
+.feedback-form-container select,
+.feedback-form-container textarea,
+.feedback-form-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.feedback-form-container button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.feedback-form-container button:hover {
+    background-color: #45a049;
+}
+
+.feedback-form-container p {
+    color: green;
+    font-weight: bold;
+}
+ */
+
+
+
+/* 🌟 Full-Screen Layout */
+.feedback-form-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #ffffff, #cdf6ab);
+    font-family: "Poppins", sans-serif;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+}
+
+/* 📌 Left Side (Heading) */
+.feedback-left {
+    flex: 1;
+    max-width: 40%;
+    padding: 20px;
+    text-align: center;
+}
+
+.feedback-left h2 {
+    font-size: 3.8rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.feedback-left p {
+    font-size: 1.2rem;
+    opacity: 0.8;
+}
+
+/* 🎯 Right Side (Form) */
+.feedback-right {
+    flex: 1;
+    max-width: 50%;
+    background: rgb(58 93 67);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(12px);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.feedback-right:hover {
+    transform: scale(1.02);
+}
+
+/* ⭐ Star Rating */
+.star-rating {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.star {
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.star.active {
+    color: #ffd700;
+    transform: scale(1.2);
+}
+
+/* ✍️ Input Fields */
+.feedback-right textarea,
+.feedback-right input {
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.2);
+    color: rgb(0, 0, 0);
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.feedback-right textarea::placeholder,
+.feedback-right input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.feedback-right textarea:focus,
+.feedback-right input:focus {
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* 🚀 Submit Button */
+.feedback-right button {
+    background: #7bff00;
+    color: #000;
+    padding: 14px 25px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.3);
+    margin-top: 10px;
+}
+
+.feedback-right button:hover {
+    background: #ffea00;
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.5);
+}
+
+/* ✅ Success Message */
+.success-message {
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #00ff99;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* 📱 Mobile Responsive */
+@media (max-width: 900px) {
+    .feedback-form-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .feedback-left {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .feedback-right {
+        max-width: 90%;
+    }
+}
+
+/* ✨ Smooth Fade-In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

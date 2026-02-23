@@ -1,0 +1,440 @@
+/* Project Owner Section */
+.project-owner-section {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #1a202c;
+  padding: 100px 0;
+  background: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-owner-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 107, 53, 0.3), transparent);
+}
+
+.owner-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Header */
+.owner-header {
+  text-align: center;
+  margin-bottom: 60px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.owner-badge {
+  display: inline-block;
+  background: rgba(255, 107, 53, 0.1);
+  color: #FF6B35;
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(255, 107, 53, 0.2);
+}
+
+.owner-header h2 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #1a202c;
+  margin-bottom: 15px;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+}
+
+.owner-subtitle {
+  font-size: 1.1rem;
+  color: #4a5568;
+  line-height: 1.7;
+}
+
+/* Owner Profile Layout */
+.owner-profile {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+.owner-image-container {
+  flex: 1;
+  min-width: 300px;
+  max-width: 400px;
+}
+
+.owner-image-wrapper {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.owner-image {
+  width: 280px;
+  height: 280px;
+  background: rgba(255, 107, 53, 0.1);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgba(255, 107, 53, 0.2);
+  position: relative;
+  z-index: 1;
+}
+
+.owner-icon {
+  font-size: 8rem;
+  color: #FF6B35;
+  opacity: 0.8;
+}
+
+.owner-image-overlay {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 280px;
+  height: 280px;
+  background: linear-gradient(135deg, rgba(255, 107, 53, 0.1), transparent);
+  border-radius: 20px;
+  z-index: 0;
+}
+
+.owner-achievements {
+  display: flex;
+  gap: 20px;
+}
+
+.achievement {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  background: rgba(255, 107, 53, 0.05);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 107, 53, 0.1);
+}
+
+.achievement h4 {
+  font-size: 1.2rem;
+  color: #FF6B35;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.achievement p {
+  font-size: 0.9rem;
+  color: #4a5568;
+  margin: 0;
+}
+
+/* Owner Info */
+.owner-info {
+  flex: 2;
+  min-width: 300px;
+}
+
+.owner-name-title {
+  margin-bottom: 30px;
+}
+
+.owner-name-title h3 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #1a202c;
+  margin-bottom: 10px;
+  line-height: 1.1;
+}
+
+.owner-role {
+  display: inline-block;
+  padding: 8px 20px;
+  background: rgba(255, 107, 53, 0.1);
+  color: #FF6B35;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border: 1px solid rgba(255, 107, 53, 0.2);
+}
+
+/* Education */
+.owner-education {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 25px;
+  background: rgba(255, 107, 53, 0.05);
+  border-radius: 12px;
+  margin-bottom: 30px;
+  border: 1px solid rgba(255, 107, 53, 0.1);
+}
+
+.education-icon {
+  width: 60px;
+  height: 60px;
+  background: #FF6B35;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.8rem;
+}
+
+.education-details h4 {
+  font-size: 1.3rem;
+  color: #1a202c;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.degree {
+  font-size: 1rem;
+  color: #4a5568;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.roll-number {
+  font-size: 0.9rem;
+  color: #FF6B35;
+  background: rgba(255, 107, 53, 0.1);
+  padding: 4px 12px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.university {
+  font-size: 0.9rem;
+  color: #718096;
+  margin: 0;
+}
+
+/* Bio */
+.owner-bio {
+  margin-bottom: 30px;
+}
+
+.owner-bio h4 {
+  font-size: 1.3rem;
+  color: #1a202c;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.owner-bio p {
+  font-size: 1rem;
+  color: #4a5568;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+/* Skills */
+.owner-skills {
+  margin-bottom: 30px;
+}
+
+.owner-skills h4 {
+  font-size: 1.3rem;
+  color: #1a202c;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-tag {
+  background: rgba(255, 107, 53, 0.1);
+  color: #FF6B35;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: 1px solid rgba(255, 107, 53, 0.2);
+  transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+  background: #FF6B35;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Contact */
+.owner-contact {
+  margin-bottom: 30px;
+}
+
+.owner-contact h4 {
+  font-size: 1.3rem;
+  color: #1a202c;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.contact-links {
+  display: flex;
+  gap: 15px;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  background: rgba(255, 107, 53, 0.05);
+  color: #FF6B35;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  border: 1px solid rgba(255, 107, 53, 0.2);
+  transition: all 0.3s ease;
+}
+
+.contact-link:hover {
+  background: #FF6B35;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.contact-link svg {
+  font-size: 1.2rem;
+}
+
+/* Quote */
+.owner-quote {
+  padding: 30px;
+  background: linear-gradient(135deg, rgba(255, 107, 53, 0.05), rgba(255, 107, 53, 0.02));
+  border-radius: 12px;
+  border-left: 4px solid #FF6B35;
+  position: relative;
+}
+
+.quote-icon {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 3rem;
+  color: rgba(255, 107, 53, 0.2);
+  font-family: Georgia, serif;
+  font-weight: bold;
+}
+
+.quote-text {
+  font-size: 1.2rem;
+  color: #2d3748;
+  line-height: 1.6;
+  font-style: italic;
+  padding-left: 40px;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .owner-profile {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  .owner-image-container,
+  .owner-info {
+    max-width: 100%;
+  }
+  
+  .owner-header h2 {
+    font-size: 2.2rem;
+  }
+  
+  .owner-name-title h3 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-owner-section {
+    padding: 60px 0;
+  }
+  
+  .owner-container {
+    padding: 0 1rem;
+  }
+  
+  .owner-header h2 {
+    font-size: 1.8rem;
+  }
+  
+  .owner-name-title h3 {
+    font-size: 1.6rem;
+  }
+  
+  .owner-education {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+  
+  .contact-links {
+    flex-direction: column;
+  }
+  
+  .owner-image {
+    width: 240px;
+    height: 240px;
+    margin: 0 auto;
+  }
+  
+  .owner-image-overlay {
+    width: 240px;
+    height: 240px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 480px) {
+  .project-owner-section {
+    padding: 40px 0;
+  }
+  
+  .owner-header h2 {
+    font-size: 1.5rem;
+  }
+  
+  .owner-badge {
+    font-size: 0.8rem;
+    padding: 6px 16px;
+  }
+  
+  .owner-name-title h3 {
+    font-size: 1.3rem;
+  }
+  
+  .owner-achievements {
+    flex-direction: column;
+  }
+  
+  .owner-icon {
+    font-size: 6rem;
+  }
+  
+  .quote-text {
+    font-size: 1rem;
+    padding-left: 30px;
+  }
+}
