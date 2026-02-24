@@ -67,10 +67,10 @@ export default function Navbar() {
                 <a className="nav-link" href="#Service">Workouts</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#team">Nutrition</a>
+                <a className="nav-link" href="#team">Owner</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#community">Community</a>
+                <a className="nav-link" href="#contact">Contact</a>
               </li>
             </ul>
             
